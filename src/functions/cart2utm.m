@@ -1,5 +1,12 @@
 %% Cartesian coordinate to UTM
 % (X, Y, Z) -> (E, N, U)
+%Kai Borre -11-1994
+%Copyright (c) by Kai Borre
+%
+% CVS record:
+% $Id: cart2utm.m,v 1.1.1.1.2.4 2006/08/22 13:45:59 dpl Exp $
+
+
 function [E, N, U] = cart2utm(X, Y, Z, zone)
     a     = 6378388;
     f     = 1 / 297;

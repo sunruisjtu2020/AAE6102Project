@@ -1,5 +1,12 @@
 %% Conversion from Cartesian coordinates to geographical coordinates
 % (x, y, z) -> (phi, lambda, h)
+% % % % %Kai Borre 10-13-98
+% % % % %Copyright (c) by Kai Borre
+% % % % %Revision: 1.0   Date: 1998/10/23  
+% % % % %
+% % % % % CVS record:
+% % % % % $Id: cart2geo.m,v 1.1.2.2 2006/08/22 13:45:59 dpl Exp $
+%
 function [phi, lambda, h] = cart2geo(X, Y, Z, i)
     a      = [6378388 6378160 6378135 6378137 6378137];
     f      = [1 / 297, 1 / 298.247, 1 / 298.26, 1 / 298.257222101, 1 / 298.257223563];
